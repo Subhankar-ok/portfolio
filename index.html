@@ -43,8 +43,8 @@
       <div class="col-md-6">
         <h1>Hi, I'm <span style="color: #ffc107;">Subhankar</span></h1>
         <p class="lead">
-          Full-Stack Web Developer (in progress) <br>
-          HTML • CSS • Bootstrap • JavaScript • SQL • Python • Node.js • React.js
+          Full-Stack Web Developer <br>
+          HTML • CSS • Bootstrap • JavaScript • SQL • Python • React.js
         </p>
         <a href="#projects" class="btn btn-primary mt-3">See My Projects</a>
       </div>
@@ -92,9 +92,10 @@
     </div>
   </div>
     <div class="text-center mt-4">
-      <a href="documents/Subhankar Samanta - Resume 666.pdf" class="btn btn-warning btn-lg" download>
-        <i class="bi bi-download"></i> Download Resume
+      <a href="documents/Subhankar_Samanta_Resume __.pdf" download class="btn btn-warning mt-3 btn-lg">
+         <i class="bi bi-download me-2"></i> Download Resume
       </a>
+
     </div>
   </div>
 </section>
@@ -125,8 +126,9 @@
       <div class="col-md-4 mb-4 mb-md-0">
         <div class="border p-4 bg-white shadow-sm rounded mb-4">
           <h5 class="mb-2">🏅 Certification</h5>
-          <p class="mb-1">The Joy of Computing using Python</p>
-          <a href="documents/nptel.pdf" download class="btn btn-sm btn-outline-primary">Download Certificate</a>
+          <p class="mb-1">The Joy of Computing using Python - NPTEL</p>
+          <a href="documents/nptel_removed.pdf" download class="btn btn-sm btn-outline-primary">Download Certificate</a>
+          <p class="mb-1">Python Full stack - Besant Technologies</p>
         </div>
         <div class="border p-4 bg-white shadow-sm rounded mb-4">
           <h5 class="mb-2">🛠 Tools</h5>
@@ -177,12 +179,12 @@
     <div class="row g-4">
       <div class="scroll-container d-flex overflow-auto gap-4 py-3">
         <div class="card flex-shrink-0" style="width: 300px;">
-          <img src="images/Portfolio.JPG" class="card-img-top" alt="Portfolio">
+          <img src="images/portfolio.png" class="card-img-top" alt="Portfolio">
           <div class="card-body">
            <h5 class="card-title">👨‍💻 Portfolio Website</h5>
             <p class="card-text">Fully responsive personal portfolio built with Bootstrap 5. Showcases skills, projects, education, certifications, and contact info — designed for job applications.</p>
             <a href="#" class="btn btn-outline-primary">Live Demo</a>
-            <a href="https://github.com/Subhankar-ok" target="_blank" class="btn btn-outline-dark btn-sm">GitHub</a>
+            <a href="https://github.com/Subhankar-ok/portfolio" target="_blank" class="btn btn-outline-dark btn-sm">GitHub</a>
           </div>
         </div>
         
@@ -191,7 +193,7 @@
     <div class="card-body">
       <h5 class="card-title">🤖 AI Mock Interview Prep</h5>
       <p class="card-text">A React-based app that simulates mock interviews for various topics like Number Programs, HTML, CSS, JS, and React. It includes AI-generated feedback, real-time code evaluation, and MCQ quizzes.</p>
-      <a href="https://frontendmock.netlify.app/" target="_blank" class="btn btn-outline-primary btn-sm">Live Demo</a>
+      <a href="https://frontendmock.netlify.app/" target="_blank" class="btn btn-outline-primary ">Live Demo</a>
       <a href="https://github.com/Subhankar-ok/Frontend-Ai-Mock" target="_blank" class="btn btn-outline-dark btn-sm">GitHub</a>
     </div>
   </div>
@@ -206,7 +208,7 @@
     <p class="card-text">
       A static restaurant website built with HTML, CSS, and Bootstrap. Features a variety of food categories with well-organized sections.
     </p>
-    <a href="https://loquacious-meerkat-5eb607.netlify.app/" class="btn btn-outline-primary btn-sm" target="_blank">Live Demo</a>
+    <a href="https://loquacious-meerkat-5eb607.netlify.app/" class="btn btn-outline-primary" target="_blank">Live Demo</a>
     <a href="https://github.com/Subhankar-ok/resturant-ui" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
   </div>
 </div>
@@ -218,7 +220,7 @@
     <p class="card-text">
       A responsive Netflix homepage clone using HTML & CSS. Includes multi-language interface and mobile-friendly layout with smooth hover effects.
     </p>
-    <a href="https://earnest-banoffee-4be38e.netlify.app/" class="btn btn-outline-primary btn-sm" target="_blank">Live Demo</a>
+    <a href="https://earnest-banoffee-4be38e.netlify.app/" class="btn btn-outline-primary" target="_blank">Live Demo</a>
     <a href="https://github.com/Subhankar-ok/Netflix-Clone" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
   </div>
 </div>
@@ -229,7 +231,7 @@
     <p class="card-text">
       A React-based movie search app using the OMDB API. Features live search and responsive UI for exploring movies instantly.
     </p>
-    <a href="https://subtle-douhua-3d18e9.netlify.app/" class="btn btn-outline-primary btn-sm" target="_blank">Live Demo</a>
+    <a href="https://subtle-douhua-3d18e9.netlify.app/" class="btn btn-outline-primary" target="_blank">Live Demo</a>
     <a href="https://github.com/Subhankar-ok/movie-app" class="btn btn-outline-dark btn-sm" target="_blank">GitHub</a>
   </div>
 </div>
@@ -268,18 +270,23 @@
     <h2 class="text-center section-title">Contact Me</h2>
     <div class="row justify-content-center">
       <div class="col-md-6">
-        <form>
+        <form 
+          id="contactForm"
+          action="https://formspree.io/f/mnnzyqnv" 
+          method="POST" 
+          autocomplete="off"
+        >
           <div class="mb-3">
             <label for="name" class="form-label">Your Name</label>
-            <input type="text" class="form-control" id="name" placeholder="John Doe">
+            <input type="text" class="form-control" id="name" name="name" placeholder="John Doe">
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="john@example.com">
+            <input type="email" class="form-control" id="email" name="email" placeholder="john@example.com">
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="4" placeholder="Let's build something great!"></textarea>
+            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Let's build something great!"></textarea>
           </div>
           <button type="submit" class="btn btn-primary w-100">Send</button>
         </form>
@@ -287,6 +294,8 @@
     </div>
   </div>
 </section>
+
+
 
 <!-- Footer -->
 <footer class="text-center text-white py-4 mt-5" style="background-color: #343a40;">
@@ -307,6 +316,23 @@
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+   const form = document.getElementById("contactForm");
+
+  // Always clear on page load
+  window.addEventListener("load", () => form.reset());
+
+  // Also clear after submit
+  form.addEventListener("submit", () => {
+    setTimeout(() => form.reset(), 100);
+  });
+
+  // Handle browser back/forward cache issue
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+      form.reset();
+    }
+  });
+</script>
 </body>
 </html>
