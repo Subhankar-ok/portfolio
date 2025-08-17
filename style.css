@@ -260,3 +260,19 @@ body.dark-mode .btn-dark:hover {
   color: #000 !important;
   border-color: #ffc107 !important;
 }
+.profile-pic {
+  width: 200px;      /* adjust size */
+  height: 200px;     /* make it equal width/height */
+  border-radius: 50%; /* makes it perfectly circular */
+  object-fit: cover;  /* ensures face stays centered */
+  border: 4px solid #fff; /* optional white border */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* optional shadow */
+}
+  .profile-pic {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3), 
+              0 0 10px rgba(255, 255, 255, 0.4);
+}
+.profile-pic:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
